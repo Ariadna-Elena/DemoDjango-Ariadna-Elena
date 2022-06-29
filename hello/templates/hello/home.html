@@ -1,0 +1,32 @@
+{% extends "hello/layout.html" %}
+{% block title %}
+    Django
+{% endblock %}
+{% block content %}
+    <h2>Mensajes Registrados</h2>
+
+    {% if message_list %}
+        <table class="message_list">
+            <thead>
+            <tr>
+                <th>Fecha</th>
+                <th>Tiempo</th>
+                <th>Mensaje</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for message in message_list %}
+                <tr>
+                    <td>{{ message.log_date | date:'d M Y' }}</td>
+                    <td>{{ message.log_date | time:'H:i:s' }}</td>
+                    <td>
+                        {{ message.message }}
+                    </td>
+                </tr>
+            {% endfor %}
+            </tbody>
+        </table>
+    {% else %}
+        <p>No se han registrado mensaje. Usa <a href="{% url 'log' %}">Formulario de mensaje de registro</a>.</p>
+    {% endif %}
+{% endblock %}
