@@ -7,7 +7,8 @@ Para este demo deberá contar con los siguientes requisitos:
 
 Para ejecutar el demo realice los siguientes pasos:
 
-1. Cree un entorno virtual dentro de una carpeta específica.
+1. Clona el proyecto DemoDjango....
+2. Cree un entorno virtual dentro de la carpeta (proyecto clonado).
     Linux:
     `sudo apt-get install python3-venv`  #Si es necesario
     `python3 -m venv .venv`
@@ -15,9 +16,9 @@ Para ejecutar el demo realice los siguientes pasos:
     Windows:
     `py -3 -m venv .venv`
     `.venv\scripts\activate`
-2. Instale paquetes con `pip3 install -r requirements.txt`.
-3. Actualice pip en el entorno virtual ejecutando `python -m pip install --upgrade pip`.
-4. Instale Django en el entorno virtual ejecutando `python -m pip install django`.
-5. Cree e inicialice la base de datos ejecutando `python manage.py migrate`.
-6. Para verificar el proyecto Django ejecute el comando `python manage.py runserver`.
-7. Inicie sesión con django como usuario y contraseña o bien, cree un superusuario ejecutando `python manage.py createsuperuser --username=<username> --email=<email>`.
+3. Instale paquetes con `pip3 install -r requirements.txt`.
+4. Actualice pip en el entorno virtual terminado `python -m pip install --upgrade pip`.
+5. Instale Django en el entorno virtual terminado `python -m pip install django`.
+6. Cree e inicialice la base de datos ejecutando `python manage.py migrate`.
+7. Para verificar el proyecto DemoDjango ejecute el comando `python manage.py runserver` y copie la url en un navegador.
+8. Inicie sesión con `django` como usuario y contraseña o bien, cree un superusuario ejecutando `python manage.py createsuperuser --username=<username> --email=<email>`.
